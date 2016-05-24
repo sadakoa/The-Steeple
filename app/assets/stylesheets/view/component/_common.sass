@@ -1,0 +1,58 @@
+*:before,
+*:after
+  +box-sizing
+
+html,
+body
+  margin: 0
+  padding: 0
+  word-wrap: break-word
+
+html
+  -webkit-overflow-scrolling: touch
+  height: 100%
+
+body
+  line-height: 1.5
+  -webkit-overflow-scrolling: touch
+  width: 100%
+  height: 100%
+
+blockquote, dl, dd, h1, h2, h3, h4, h5, h6, figure, p, pre
+  margin: 0
+
+img
+  display: block
+  max-width: 100%
+
+ul
+  list-style: none
+  padding-left: 0
+
+a
+  text-decoration: none
+
+// ================================================
+
+body
+  color: #1a1a1a
+  font-family: 'lato'
+  letter-spacing: 1px
+  line-height: 1.7
+  position: relative
+
+.top-body
+  overflow: hidden
+  background: url('../images/top-bg01.jpg') #000 no-repeat fixed
+  // background: #000 no-repeat fixed
+  background-size: cover
+
+@media screen and (max-width: 768px)
+  .top-body
+    // background-position: 50%
+
+////////////////////////////////////////
+
+.common-body
+  position: relative
+  background-color: #000

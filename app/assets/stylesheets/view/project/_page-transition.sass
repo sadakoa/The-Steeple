@@ -1,0 +1,198 @@
+.animation
+  visibility hidden
+
+.fadeInDown
+  animation-fill-mode: both
+  animation-delay: 1s
+  animation-duration: 1.3s
+  animation-name:  fadeInDown
+  visibility: visible!important
+
+@keyframes fadeInDown
+  0%
+    opacity: 0
+    transform: translateY(60px)
+  100%
+    opacity: 1
+    transform: translateY(0)
+
+// -------------
+
+.fadeInDown02
+  animation-fill-mode: both
+  animation-delay: 1.2s
+  animation-duration: 1.3s
+  animation-name:  fadeInDown
+  visibility: visible!important
+
+.fadeInDown03
+  animation-fill-mode: both
+  animation-delay: 1.4s
+  animation-duration: 1.3s
+  animation-name:  fadeInDown
+  visibility: visible!important
+
+.fadeInDown04
+  animation-fill-mode: both
+  animation-delay: 1.6s
+  animation-duration: 1.3s
+  animation-name:  fadeInDown
+  visibility: visible!important
+
+.fadeInDown05
+  animation-fill-mode: both
+  animation-delay: 1.8s
+  animation-duration: 1.3s
+  animation-name:  fadeInDown
+  visibility: visible!important
+
+// ---------------
+
+.loading-bg
+  position: fixed
+  width: 100%
+  height: 100%
+  top: 0
+  left: 0
+  z-index: 3
+  background-color: #fff
+
+.sk-cube-grid
+  position: absolute
+  top: 0
+  left: 0
+  right: 0
+  bottom: 0
+  margin: auto
+  width: 40px
+  height: 40px
+
+.sk-cube-grid .sk-cube
+  width: 33%
+  height: 33%
+  background-color: #1a1a1a
+  float: left
+  -webkit-animation: sk-cubeGridScaleDelay 1.3s infinite ease-in-out
+  animation: sk-cubeGridScaleDelay 1.3s infinite ease-in-out
+
+.sk-cube-grid .sk-cube1
+  -webkit-animation-delay: 0.2s
+  animation-delay: 0.2s
+.sk-cube-grid .sk-cube2
+  -webkit-animation-delay: 0.3s
+  animation-delay: 0.3s
+.sk-cube-grid .sk-cube3
+  -webkit-animation-delay: 0.4s
+  animation-delay: 0.4s
+.sk-cube-grid .sk-cube4
+  -webkit-animation-delay: 0.1s
+  animation-delay: 0.1s
+.sk-cube-grid .sk-cube5
+  -webkit-animation-delay: 0.2s
+  animation-delay: 0.2s
+.sk-cube-grid .sk-cube6
+  -webkit-animation-delay: 0.3s
+  animation-delay: 0.3s
+.sk-cube-grid .sk-cube7
+  -webkit-animation-delay: 0s
+  animation-delay: 0s
+.sk-cube-grid .sk-cube8
+  -webkit-animation-delay: 0.1s
+  animation-delay: 0.1s
+.sk-cube-grid .sk-cube9
+  -webkit-animation-delay: 0.2s
+  animation-delay: 0.2s
+
+@-webkit-keyframes sk-cubeGridScaleDelay
+  0%
+    transform: scale3D(1, 1, 1)
+  35%
+    transform: scale3D(0, 0, 1)
+  70%
+    transform: scale3D(1, 1, 1)
+  100%
+    transform: scale3D(1, 1, 1)
+
+@keyframes sk-cubeGridScaleDelay
+  0%
+    transform: scale3D(1, 1, 1)
+  35%
+    transform: scale3D(0, 0, 1)
+  70%
+    transform: scale3D(1, 1, 1)
+  100%
+    transform: scale3D(1, 1, 1)
+
+.common-bg
+  background-color: #1a1a1a
+  .sk-cube-grid .sk-cube
+    background-color: #fff
+
+// ----------------------------------------
+
+.leftInDown01
+  animation-fill-mode: both
+  animation-delay: 1.3s
+  animation-duration: 1.3s
+  animation-name:  leftInDown
+  visibility: visible!important
+
+.leftInDown02
+  animation-fill-mode: both
+  animation-delay: 1.4s
+  animation-duration: 1.3s
+  animation-name:  leftInDown
+  visibility: visible!important
+
+.leftInDown03
+  animation-fill-mode: both
+  animation-delay: 1.5s
+  animation-duration: 1.3s
+  animation-name:  leftInDown
+  visibility: visible!important
+
+.leftInDown04
+  animation-fill-mode: both
+  animation-delay: 1.7s
+  animation-duration: 1.3s
+  animation-name:  leftInDown
+  visibility: visible!important
+
+@keyframes leftInDown
+  0%
+    opacity: 0
+    transform: translateX(60px)
+  100%
+    opacity: 1
+    transform: translateY(0)
+
+// ----------------------------------------
+
+.anim-trans
+  animation: anim 4s ease-in-out
+
+@keyframes anim
+  0%
+  20%
+    z-index: 11
+    transform: skewX(5deg) translateX(-100%)
+  40%
+    transform: skewX(0deg) translateX(0)
+    width: 100%
+    z-index: 11
+    box-shadow: 10px 10px 5px #eaeaea
+  60%
+    transform: skewX(3deg) translateX(0)
+    width: 100%
+    z-index: 11
+    box-shadow: 10px 10px 5px #eaeaea
+  80%
+    transform: skewX(1deg) translateX(-100%)
+    width: 60%
+    z-index: 11
+    box-shadow: 10px 10px 5px #eaeaea
+  100%
+    transform: skewX(-5deg) translateX(-50px)
+    width: 30%
+    z-index: 1
+    box-shadow: none

@@ -1,0 +1,49 @@
+.l-page-headline-area
+  width: 1200px
+  margin: 0 auto 60px
+  position: relative
+  &:after
+    content: ""
+    position: absolute
+    top: 60px
+    left: 0
+    width: 50px
+    height: 2px
+    background-color: #000
+  .seciton-title
+    font-size: 30px
+    letter-spacing: 5px
+    line-height: 1.5
+    font-family: 'brandon_blk_it'
+    margin: 0 0 40px 0
+  .section-text
+    font-size: 12px
+  .japanese-text
+    font-weight: bold
+  .english-text
+    color: #808080
+
+.l-work-area
+  position: absolute
+  top: 0
+  color: #fff
+
+.work-headline
+  &:after
+    background-color: #FFF
+
+@media only screen and (max-width: 1024px)
+  .l-page-headline-area
+    width: 90%
+    margin: 0 auto 30px
+    &:after
+      top: 38px
+      width: 30px
+    .seciton-title
+      font-size: 18px
+      letter-spacing: 3px
+      margin: 0 0 30px 0
+    .section-text
+      font-size: 9px
+    .japanese-text
+      margin-bottom: 5px

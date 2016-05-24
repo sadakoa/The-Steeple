@@ -1,0 +1,31 @@
+.button
+  display: inline-block
+  width: 170px
+  height: 40px
+  font-size: 14px
+  letter-spacing: 3px
+  text-align: center
+  text-decoration: none
+  line-height: 38px
+  outline: none
+  overflow: hidden
+  &:before,
+  &:after
+    position: absolute
+    z-index: -1
+    display: block
+    content: ''
+
+.button
+  box-sizing: border-box
+  transition: all .5s
+  &:before
+    box-sizing: border-box
+    transition: all .5s
+  &:after
+    box-sizing: border-box
+    transition: all .5s
+
+.button:hover
+  background-color: #fff
+  color: #000!important

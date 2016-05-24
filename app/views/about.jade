@@ -1,0 +1,136 @@
+extends layouts/_layout.jade
+
+block append init
+  - pageTitle = 'The Steeple | ABOUT';
+  - bodyClass = 'about-body';
+
+block content
+  .loading-bg
+    .sk-cube-grid
+      .sk-cube.sk-cube1
+      .sk-cube.sk-cube2
+      .sk-cube.sk-cube3
+      .sk-cube.sk-cube4
+      .sk-cube.sk-cube5
+      .sk-cube.sk-cube6
+      .sk-cube.sk-cube7
+      .sk-cube.sk-cube8
+      .sk-cube.sk-cube9
+  .page-content-wrapper
+    header#header.l-header-area.lower-header
+      nav.l-nav-area
+        ul.nav-list.bottom-list
+          li.nav-list-item
+            a(href="index.html")
+              img(src="assets/images/outline.svg", alt="The Steeple")
+
+          li.nav-list-item
+            a(href="index.html")
+              | TOP
+          li.nav-list-item
+            a(href="about.html")
+              | ABOUT
+          li.nav-list-item
+            a(href="work.html")
+              | WORK
+
+    main.l-main-area.l-about-area
+      section.main-section
+        .l-page-headline-area.animation.fadeInDown
+          h1.seciton-title
+            | ABOUT
+          p.section-text.japanese-text
+            | 「The Steepleは利用者の心を刺すような尖るデザインをつくることをワークコンセプトにしています」
+          p.section-text.english-text
+            | The Steeple has to make a pointed design stinging the user's mind to work concept.
+
+        .l-page-image-area
+
+        .l-page-content-area
+          .title-area
+            h2.content-title
+              | PROJECT
+          p.content-logo
+            img(src="assets/images/outline.svg", width="300" alt="The Steeple")
+          p.content-text.logo-info
+            | The Steeple(スティープル)は貴島 衛の
+            b
+              |” 利用者の心を刺すような尖るデザインをつくる ”
+            | をワークコンセプトとしたクリエイティブプロジェクト。Webサイトやモバイルアプリ、アイコン、デジタル製品のインターフェイスデザイン等を提供します。
+          p.content-text.logo-info
+          hr
+          .l-profile-area
+            .column-block
+              img.column-image(src="assets/images/info01.svg", alt="PROFILE")
+              h3.column-title
+                | PROFILE
+              p.column-text
+                | 貴島 衛(KIJIMA MAMORU) 千葉商科大学-政策情報学部同学科-IT社会基盤コース卒業。
+              p.column-text
+                | 1994年生まれ、千葉県市川市出身。在学中に大手IT企業でのインターン、スタートアップにてデザイナーとして勤務。
+              p.column-text
+                | 作業領域はWeb、モバイルアプリのUI/IA設計、マークアップ、アニメーション等のフロントエンド。広義のデザインで問題提起、解決を日々模索。情報と構造の可視化が得意。
+
+            .column-block
+              img.column-image(src="assets/images/info02.svg", alt="CAREER")
+              h3.column-title
+                | CAREER
+              ul.column-list
+                li
+                  | 2016.04 ~ UI Designer / DeNA Co., Ltd.
+                li
+                  | 2015.06-09 ~ Intern / Super Crowds Inc.
+                li
+                  | 2014.08-12 ~ Designer / dely, Inc.
+                li
+                  | 2014.02-04 ~ Intern / Goodpatch Inc.
+                li
+                  | 2013.10-12 ~ Intern / SIRUSI Inc.
+              h4.column-sub-title
+                | SUMMER INTERN
+              ul.column-list
+                li
+                  | Yahoo JAPAN Corporation.
+                li
+                  | Cyber Agent, Inc.
+                li
+                  | pixiv Inc.
+
+            .column-block
+              img.column-image(src="assets/images/info03.svg", alt="FEATURE")
+              h3.column-title
+                | STORY
+              p.column-text
+                | The Steeple(スティープル)は利用者の心を刺すような尖るデザインを作るという考えから発足、2016年4月から活動を開始。
+              p.column-text
+                | 名前の由来はワークコンセプトのキーワードであり、「〜を尖らせる」などの意味を持つsteepleという単語から命名。
+              p.column-text
+                | The Steeple(スティープル)を通して様々なデザインをクライアントと一緒に創り上げていき、「個」としての力も磨いていきたいと考えています。
+
+      .l-biography-area
+        section.main-section
+          .l-page-content-area.content-inner
+            .title-area
+              h2.content-title
+                | BIOGRAPHY
+          .l-bio-image-area
+            .l-biography-info
+              h1.author-title.effect
+                | MAMORU KIJIMA
+              p.author-job
+                | Web & UI Designer
+              .button-area
+                a(href="http://sadakoa.org" target="_blank").button.author-button
+                  | ABOUT ME
+
+    footer#footer.l-footer-area
+      ul.sns-list
+        li.sns-list-item
+          a(href="mailto:info@the-steeple.tokyo")
+            img(src="assets/images/sns01.svg", alt="mail")
+        li.sns-list-item
+          a(href="http://dribbble.com/the_steeple")
+            img(src="assets/images/sns02.svg", alt="dribbble")
+        li.sns-list-item
+          a(href="http://twitter.com/the_steeple")
+            img(src="assets/images/sns03.svg", alt="twitter")

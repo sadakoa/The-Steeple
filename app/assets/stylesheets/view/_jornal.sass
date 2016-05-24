@@ -1,0 +1,41 @@
+.jornal-image-area
+  background: url('../images/jornal-bg.jpg') #000 no-repeat
+  background-size: cover
+  background-position: 50%
+
+.article-list
+  text-align: center
+  padding-top: 0
+  .article-list-item
+    margin: 0 0 30px 0
+    .article-data
+      font-size: 14px
+      font-family: 'brandon_bld'
+      margin-bottom: 0px
+    .article-title
+      color: #1a1a1a
+      font-size: 18px
+      font-weight: bold
+      transition: all 400ms ease-in-out
+      padding-bottom: 4px
+      border-bottom: 1px solid #1a1a1a
+      &:hover
+        color: #da1523
+
+@media only screen and (max-width: 1024px)
+  .article-list
+    writing-mode: horizontal-tb
+    margin: 0 auto
+    padding-left: 0
+    .article-list-item
+      margin: 0 0 30px 0
+      .article-data
+        display: block
+        font-size: 10px
+        margin-bottom: -5px
+      .article-title
+        font-size: 12px
+        padding-bottom: 4px
+        border-bottom: 1px solid #1a1a1a
+
+

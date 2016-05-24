@@ -1,0 +1,48 @@
+.l-header-area
+  position: absolute
+  width: 100%
+  top: 0
+  z-index: 2
+  height: 70px
+
+.nav-list
+  display: flex
+  align-items: flex-end
+  padding: 30px 40px 0
+  letter-spacing: 2px
+  .nav-list-item
+    margin: 0 30px 0 0
+    a
+      color: #fff
+    &:first-child
+      margin-right: auto
+    &:last-child
+      margin: 0
+    &:nth-child(n+2)
+      padding-bottom: 3px
+
+.bottom-list .nav-list-item a
+  color: #1a1a1a
+
+
+@media only screen and (max-width: 1024px)
+  .top-header
+    border-bottom: 1px solid #fff
+  .nav-list
+    font-size: 12px
+    padding: 10px 20px 0
+    .nav-list-item
+      margin: 0 15px 0 0
+      &:nth-child(n+2)
+        padding-bottom: 5px
+
+@media only screen and (max-width: 320px)
+  .nav-list
+    padding: 10px 10px 0
+    img
+      width: 100px
+    .nav-list-item
+      margin: 0 10px 0 0
+
+
+

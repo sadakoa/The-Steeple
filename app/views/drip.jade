@@ -1,0 +1,57 @@
+extends layouts/_layout.jade
+
+block append init
+  - pageTitle = 'The Steeple | work - drip';
+  - bodyClass = 'common-body';
+
+block content
+  .loading-bg.common-bg
+    .sk-cube-grid
+      .sk-cube.sk-cube1
+      .sk-cube.sk-cube2
+      .sk-cube.sk-cube3
+      .sk-cube.sk-cube4
+      .sk-cube.sk-cube5
+      .sk-cube.sk-cube6
+      .sk-cube.sk-cube7
+      .sk-cube.sk-cube8
+      .sk-cube.sk-cube9
+  .page-content-wrapper
+    header#header.l-header-area.top-header
+      nav.l-nav-area
+        ul.nav-list
+          li.nav-list-item
+            a(href="index.html")
+              img(src="assets/images/outline-w.svg", alt="The Steeple")
+          li.nav-list-item
+            a(href="index.html")
+              | TOP
+          li.nav-list-item
+            a(href="about.html")
+              | ABOUT
+          li.nav-list-item
+            a(href="work.html")
+              | WORK
+
+    .l-back-area
+        a(href="javascript:history.back();")
+          | ←BACK
+
+
+    .l-work-title-area
+      p.work-data.animation.fadeInDown
+        | - 2015 -
+      h2.work-title.animation.fadeInDown02
+        | DRIP
+      p.work-category.animation.fadeInDown03
+        | AppConcept
+      .detail-info
+        p.work-detail.animation.fadeInDown04
+          | Drip is for you to spend the most productive time, is health care app to refresh relax the body by walking to the sound. It was produced in the graduation work of the university.
+    .l-work-content-area.animation.fadeInDown05
+      img.work-image(src="assets/images/work/bg/drip-bg.jpg")
+      img.work-image(src="assets/images/work/drip/05.jpg")
+      img.work-image(src="assets/images/work/drip/01.png")
+      img.work-image(src="assets/images/work/drip/02.png")
+      img.work-image(src="assets/images/work/drip/03.png")
+      img.work-image(src="assets/images/work/drip/04.png")
