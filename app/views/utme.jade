@@ -1,0 +1,58 @@
+extends layouts/_layout.jade
+
+block append init
+  - pageTitle = 'The Steeple | work - UTme!';
+  - bodyClass = 'common-body';
+
+block content
+  .loading-bg.common-bg
+    .sk-cube-grid
+      .sk-cube.sk-cube1
+      .sk-cube.sk-cube2
+      .sk-cube.sk-cube3
+      .sk-cube.sk-cube4
+      .sk-cube.sk-cube5
+      .sk-cube.sk-cube6
+      .sk-cube.sk-cube7
+      .sk-cube.sk-cube8
+      .sk-cube.sk-cube9
+  .page-content-wrapper
+    header#header.l-header-area.top-header
+      nav.l-nav-area
+        ul.nav-list
+          li.nav-list-item
+            a(href="index.html")
+              img(src="assets/images/outline-w.svg", alt="The Steeple")
+          li.nav-list-item
+            a(href="index.html")
+              | TOP
+          li.nav-list-item
+            a(href="about.html")
+              | ABOUT
+          li.nav-list-item
+            a(href="work.html")
+              | WORK
+
+    .l-back-area
+        a(href="javascript:history.back();")
+          | ←BACK
+
+
+    .l-work-title-area
+      p.work-data.animation.fadeInDown
+        | - 2016 -
+      h2.work-title.animation.fadeInDown02
+        | UTme! #WearYourDays
+      p.work-category.animation.fadeInDown03
+        | Promotion
+      .detail-info.animation.fadeInDown04
+        p.work-detail
+          | UTme! #WearYourDays Is the promotion that you can design a T-shirt using the Instagram. Was mainly responsible for the user experience and information design.
+        p.work-detail
+          a.work-link(href="https://utme.uniqlo.com/wearyourdays/try/")
+            | https://utme.uniqlo.com/wearyourdays/try/
+    .l-work-content-area.animation.fadeInDown05
+      img.work-image(src="assets/images/work/bg/utme-bg.png")
+      img.work-image(src="assets/images/work/utme/02.png")
+      img.work-image(src="assets/images/work/utme/03.png")
+      img.work-image(src="assets/images/work/utme/04.png")
